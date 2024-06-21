@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #D2D2D2;
+            background-image:
+                url(images/wuwa-background-v0-08rkqhm6xt1d1.webp)
+        }
+
+        body::before {
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/Jiyan_Card.webp" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/JinhsiCard.webp" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/Encores_Card.webp" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/Danjin_Card.webp" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/Sanhua.webp" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/Taoqi.webp" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/Yangyang_Card.webp" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/Baizhi_Card.webp" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/Yinlins_Card.webp" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/Changli_Card.webp" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="WuWa">
+                WuWa
+            </h1>
+            <div class="author">
+                <h2>DenDenACL</h2>
+                <p><b>Web Design</b></p>
+                <p>
+                    WuWa Cards With 3d Slider
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
